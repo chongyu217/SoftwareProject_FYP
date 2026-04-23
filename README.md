@@ -1,8 +1,8 @@
 ## How to run the project
 
 1. Clone the repository
-- git clone https://github.com/jyou517/software_project.git
-- cd software_project
+- git clone https://github.com/chongyu217/SoftwareProject_FYP.git
+- cd SoftwareProject_FYP
 
 2. Install dependencies
 - npm install

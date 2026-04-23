@@ -1,0 +1,191 @@
+{
+  "stats": {
+    "totalFoldersScanned": 8,
+    "lastScanDate": "23 Apr 2026",
+    "recentScans": [
+      {
+        "id": "1776929466336",
+        "folder": "FYP",
+        "template": "FYP Template",
+        "date": "23 Apr 2026",
+        "status": "Completed",
+        "compliance": 100
+      },
+      {
+        "id": "1776924796586",
+        "folder": "FYP",
+        "template": "FYP Template",
+        "date": "23 Apr 2026",
+        "status": "Completed",
+        "compliance": 100
+      },
+      {
+        "id": "1776859134735",
+        "folder": "FYP",
+        "template": "FYP Template",
+        "date": "22 Apr 2026",
+        "status": "Completed",
+        "compliance": 100
+      },
+      {
+        "id": "1776858374656",
+        "folder": "FYP",
+        "template": "FYP Template",
+        "date": "22 Apr 2026",
+        "status": "Completed",
+        "compliance": 100
+      },
+      {
+        "id": "1776858279256",
+        "folder": "FYP",
+        "template": "FYP Template",
+        "date": "22 Apr 2026",
+        "status": "Completed",
+        "compliance": 100
+      },
+      {
+        "id": "1776850368071",
+        "folder": "FYP",
+        "template": "FYP Template",
+        "date": "22 Apr 2026",
+        "status": "Completed",
+        "compliance": 100
+      },
+      {
+        "id": "1776824496232",
+        "folder": "FYP",
+        "template": "Fyp Template",
+        "date": "22 Apr 2026",
+        "status": "Review Needed",
+        "compliance": 76
+      },
+      {
+        "id": "1776303850003",
+        "folder": "FYP",
+        "template": "Project Template",
+        "date": "16 Apr 2026",
+        "status": "Review Needed",
+        "compliance": 76
+      }
+    ]
+  },
+  "templates": [
+    {
+      "id": "t1",
+      "name": "Project Template",
+      "requiredFolders": [
+        "Docs/",
+        "Images/",
+        "Src/"
+      ],
+      "requiredFiles": [
+        "Report.docx",
+        "Summary.pdf"
+      ],
+      "namingRule": "YYYY_ProjectName",
+      "optionalFiles": [
+        "Notes.txt"
+      ]
+    },
+    {
+      "id": "t2",
+      "name": "HR Template",
+      "requiredFolders": [
+        "Onboarding/",
+        "Contracts/"
+      ],
+      "requiredFiles": [
+        "Employee_Contract.pdf"
+      ],
+      "namingRule": "Department_Name",
+      "optionalFiles": []
+    },
+    {
+      "id": "t3",
+      "name": "Finance Template",
+      "requiredFolders": [
+        "Invoices/",
+        "Receipts/"
+      ],
+      "requiredFiles": [
+        "Quarterly_Report.xlsx"
+      ],
+      "namingRule": "YYYY_MM_Invoice",
+      "optionalFiles": [
+        "Comments.txt"
+      ]
+    },
+    {
+      "id": "t_1776304473043",
+      "name": "FYP Template",
+      "requiredFolders": [
+        "Docs/",
+        "pdf/"
+      ],
+      "requiredFiles": [
+        "Design Report.docx",
+        "CSS301 System Requirement Specification.pdf"
+      ],
+      "namingRule": "YYYY_ProjectName",
+      "optionalFiles": []
+    },
+    {
+      "id": "t_1776919935570",
+      "name": "HAHAHA",
+      "requiredFolders": [
+        "Docs/",
+        "pdf/"
+      ],
+      "requiredFiles": [
+        "Report.docx",
+        "Summary.pdf"
+      ],
+      "namingRule": "YYYY_ProjectName",
+      "optionalFiles": [
+        "Notes.txt"
+      ]
+    },
+    {
+      "id": "t_1776929339831",
+      "name": "abc template",
+      "requiredFolders": [
+        "Docs/",
+        "pdf/"
+      ],
+      "requiredFiles": [
+        "Design Report.docx",
+        "CSS301 System Requirement Specification.pdf"
+      ],
+      "namingRule": "YYYY_ProjectName",
+      "optionalFiles": []
+    }
+  ],
+  "rules": [
+    {
+      "id": 1,
+      "name": "YYYY_ProjectName",
+      "condition": "Wrong title",
+      "status": true,
+      "template": "Project Template"
+    },
+    {
+      "id": 2,
+      "name": "Move",
+      "condition": "Wrong folder",
+      "status": false,
+      "template": "None"
+    },
+    {
+      "id": 1776920221518,
+      "name": "User Name",
+      "condition": "Missing file",
+      "status": true,
+      "template": "None"
+    }
+  ],
+  "settings": {
+    "autoScanFrequency": "Daily",
+    "notifyOnErrors": true,
+    "defaultTemplate": "Project Template"
+  }
+}
